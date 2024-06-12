@@ -1,0 +1,18 @@
+{
+    "semi": true,
+    "tabWidth": 4,
+    "singleQuote": true,
+    "bracketSpacing": false,
+    "printWidth": 120,
+    "trailingComma": "none",
+    "arrowParens": "avoid",
+    "overrides": [
+        {
+            "files": ["package.json", "*.yml", "*.yaml"],
+            "options": {
+                "singleQuote": false,
+                "tabWidth": 2
+            }
+        }
+    ]
+}
