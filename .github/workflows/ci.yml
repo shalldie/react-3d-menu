@@ -5,7 +5,7 @@ on:
   - pull_request
 
 jobs:
-  cache-and-install:
+  build-and-publish:
     runs-on: ubuntu-latest
 
     steps:
@@ -44,4 +44,4 @@ jobs:
       - name: Publish
         run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
