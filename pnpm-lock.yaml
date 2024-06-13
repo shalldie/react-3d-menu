@@ -60,7 +60,10 @@ devDependencies:
     version: 3.5.1(vite@5.2.13)
   vite-plugin-dts:
     specifier: ^3.9.1
-    version: 3.9.1(@types/node@20.14.2)(typescript@5.4.5)(vite@5.2.13)
+    version: 3.9.1(@types/node@20.14.2)(rollup@4.18.0)(typescript@5.4.5)(vite@5.2.13)
+  vite-plugin-singlefile:
+    specifier: ^2.0.1
+    version: 2.0.1(rollup@4.18.0)(vite@5.2.13)
 
 packages:
 
@@ -657,7 +660,7 @@ packages:
       fastq: 1.17.1
     dev: true
 
-  /@rollup/pluginutils@5.1.0:
+  /@rollup/pluginutils@5.1.0(rollup@4.18.0):
     resolution: {integrity: sha512-XTIWOPPcpvyKI6L1NHo0lFlCyznUEyPmPY1mc3KpPVDYulHSTvyeLNVW00QTLIAFNhR3kYnJTQHeGqU4M3n09g==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -669,6 +672,7 @@ packages:
       '@types/estree': 1.0.5
       estree-walker: 2.0.2
       picomatch: 2.3.1
+      rollup: 4.18.0
     dev: true
 
   /@rollup/rollup-android-arm-eabi@4.18.0:
@@ -2337,7 +2341,7 @@ packages:
       vite: 5.2.13(@types/node@20.14.2)(sass@1.77.5)
     dev: true
 
-  /vite-plugin-dts@3.9.1(@types/node@20.14.2)(typescript@5.4.5)(vite@5.2.13):
+  /vite-plugin-dts@3.9.1(@types/node@20.14.2)(rollup@4.18.0)(typescript@5.4.5)(vite@5.2.13):
     resolution: {integrity: sha512-rVp2KM9Ue22NGWB8dNtWEr+KekN3rIgz1tWD050QnRGlriUCmaDwa7qA5zDEjbXg5lAXhYMSBJtx3q3hQIJZSg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -2348,7 +2352,7 @@ packages:
         optional: true
     dependencies:
       '@microsoft/api-extractor': 7.43.0(@types/node@20.14.2)
-      '@rollup/pluginutils': 5.1.0
+      '@rollup/pluginutils': 5.1.0(rollup@4.18.0)
       '@vue/language-core': 1.8.27(typescript@5.4.5)
       debug: 4.3.5
       kolorist: 1.8.0
@@ -2360,6 +2364,18 @@ packages:
       - '@types/node'
       - rollup
       - supports-color
+    dev: true
+
+  /vite-plugin-singlefile@2.0.1(rollup@4.18.0)(vite@5.2.13):
+    resolution: {integrity: sha512-J74tfN6TE4fz0Hp7E1+dmVTmCpyazv4yuIpR6jd22Kq76d2CQDSQx3wDiHX8LT02f922V+YrLhRq2VIk/UYrig==}
+    engines: {node: '>18.0.0'}
+    peerDependencies:
+      rollup: ^4.12.0
+      vite: ^5.1.4
+    dependencies:
+      micromatch: 4.0.7
+      rollup: 4.18.0
+      vite: 5.2.13(@types/node@20.14.2)(sass@1.77.5)
     dev: true
 
   /vite@5.2.13(@types/node@20.14.2)(sass@1.77.5):

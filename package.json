@@ -1,7 +1,6 @@
 {
   "name": "react-3d-menu",
-  "private": true,
-  "version": "1.0.0",
+  "version": "0.0.1",
   "type": "module",
   "types": "./dist/react-3d-menu.d.ts",
   "files": [
@@ -18,6 +17,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "build-demo": "tsc && vite build --mode demo",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -41,6 +41,7 @@
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
     "vite-plugin-css-injected-by-js": "^3.5.1",
-    "vite-plugin-dts": "^3.9.1"
+    "vite-plugin-dts": "^3.9.1",
+    "vite-plugin-singlefile": "^2.0.1"
   }
 }
