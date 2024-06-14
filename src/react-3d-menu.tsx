@@ -1,7 +1,7 @@
-import React, {MouseEventHandler, useCallback, useMemo, useRef, useState} from 'react';
+import React, { MouseEventHandler, useCallback, useMemo, useRef, useState } from 'react';
 
 import styles from './react-3d-menu.module.scss';
-import {Animate, MIN_POS} from './Animate';
+import { Animate, MIN_POS } from './Animate';
 import classNames from 'classnames';
 
 interface IMenuItemProps {
@@ -16,7 +16,7 @@ const MenuItem: React.FC<IMenuItemProps> = props => {
     }, [props.posList, props.index]);
 
     return (
-        <div className={classNames(styles['menu-item'])} style={{transform: `rotate3d(1,0,0,${pos}deg)`}}>
+        <div className={classNames(styles['menu-item'])} style={{ transform: `rotate3d(1,0,0,${pos}deg)` }}>
             <div
                 className={classNames('r3m-menu-item-card', {
                     hidden: pos === MIN_POS,
@@ -40,7 +40,7 @@ function useAnimate(len = 0) {
     const root = useRef<HTMLDivElement>(null);
     const ani = useRef<Animate>();
     const [offsetY, setOffsetY] = useState(0);
-    const [posList, setPosListRaw] = useState(Array.from({length: len}).map(() => -180));
+    const [posList, setPosListRaw] = useState(Array.from({ length: len }).map(() => -180));
 
     function setPosList(newPosList: number[]) {
         setPosListRaw(newPosList);
@@ -100,7 +100,7 @@ export const React3DMenu: React.FC<IReact3DMenuProps> = props => {
         >
             <div
                 className="r3m-menu-wrap"
-                style={{transform: `rotate3d(0,1,0,${ani.offsetY}deg)`}}
+                style={{ transform: `rotate3d(0,1,0,${ani.offsetY}deg)` }}
                 onMouseMove={ani.mouseMove}
             >
                 <div>{props.children}</div>

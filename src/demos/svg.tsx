@@ -40,4 +40,4 @@ let SVG_ICONS = [IconTalk, IconHello, IconQuestion];
 
 SVG_ICONS = [...SVG_ICONS, ...SVG_ICONS, ...SVG_ICONS, ...SVG_ICONS];
 
-export {SVG_ICONS};
+export { SVG_ICONS };

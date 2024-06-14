@@ -1,6 +1,6 @@
 // import  from '@tweenjs/tween.js';
 
-import {Easing, Group, Tween} from '@tweenjs/tween.js';
+import { Easing, Group, Tween } from '@tweenjs/tween.js';
 
 const DURATION_OPEN = 1000; // 每项滚动花费时间 - open
 const DURATION_CLOSE = 200; // 每项滚动花费时间 - close
@@ -46,11 +46,11 @@ export class Animate {
                 continue;
             }
 
-            new Tween({pos: curPos}, this.group)
+            new Tween({ pos: curPos }, this.group)
                 .delay(delay)
-                .to({pos: MAX_POS}, DURATION_OPEN)
+                .to({ pos: MAX_POS }, DURATION_OPEN)
                 .easing(Easing.Elastic.Out)
-                .onUpdate(({pos}) => {
+                .onUpdate(({ pos }) => {
                     list[index] = pos;
                     this.options.onUpdate(list.slice());
                 })
@@ -94,11 +94,11 @@ export class Animate {
                 continue;
             }
 
-            new Tween({pos: curPos}, this.group)
+            new Tween({ pos: curPos }, this.group)
                 .delay(delay)
-                .to({pos: MIN_POS}, DURATION_CLOSE)
+                .to({ pos: MIN_POS }, DURATION_CLOSE)
                 .easing(Easing.Linear.None)
-                .onUpdate(({pos}) => {
+                .onUpdate(({ pos }) => {
                     list[index] = pos;
                     this.options.onUpdate(list.slice());
                 })

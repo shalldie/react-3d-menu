@@ -1,7 +1,7 @@
 <!-- 中英文切换 -->
 <div align="right">
 
-English | [中文](./README.zh-CN.md)
+[English](./README.md) | 中文
 
 </div>
 <!-- 中英文切换 end -->
@@ -23,19 +23,19 @@ React's 3D menu component, which is easy to use and has a cool effect.
 
 </div>
 
-## Live Demo
+## 在线演示
 
 [Live demo on Github Pages](https://shalldie.github.io/demos/react-3d-menu/)
 
-## Installation
+## 安装
 
 ```
 npm install react-3d-menu
 ```
 
-## Usage
+## 使用
 
-You can custom the menu item, [see more demos](https://github.com/shalldie/react-3d-menu/blob/master/src/demos/demos.tsx) .
+可以自定义菜单项, [查看例子](https://github.com/shalldie/react-3d-menu/blob/master/src/demos/demos.tsx) .
 
 ```tsx
 import { React3DMenu } from 'react-3d-menu';
@@ -59,10 +59,10 @@ export const MyComponent: React.FC = () => {
 
 ## Props
 
-| name     |        type         | description                            |
-| :------- | :-----------------: | :------------------------------------- |
-| items    | `React.ReactNode[]` | Menu items to render                   |
-| children |  `React.ReactNode`  | Element to activate 3d menu when hover |
+| name     |        type         | description                     |
+| :------- | :-----------------: | :------------------------------ |
+| items    | `React.ReactNode[]` | 自定义的菜单项                  |
+| children |  `React.ReactNode`  | 用于 hover 时激活菜单的目标元素 |
 
 ## LICENSE
 

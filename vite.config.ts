@@ -5,8 +5,6 @@ import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js';
 import dts from 'vite-plugin-dts';
 import { viteSingleFile } from 'vite-plugin-singlefile';
 
-console.log(process.env.BUILD_DEMO);
-
 // https://vitejs.dev/config/
 export default defineConfig(config => {
     const isDemo = config.mode === 'demo';

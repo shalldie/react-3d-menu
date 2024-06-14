@@ -1,7 +1,7 @@
 import './demos.scss';
 
-import {React3DMenu} from '../react-3d-menu';
-import {SVG_ICONS} from './svg';
+import { React3DMenu } from '../react-3d-menu';
+import { SVG_ICONS } from './svg';
 
 export const MenuDemo1: React.FC = () => {
     const menus = [
