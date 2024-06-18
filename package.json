@@ -1,6 +1,6 @@
 {
   "name": "react-3d-menu",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "type": "module",
   "types": "./dist/react-3d-menu.d.ts",
   "files": [
@@ -21,6 +21,15 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shalldie/react-3d-menu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shalldie/react-3d-menu/issues"
+  },
+  "homepage": "https://github.com/shalldie/react-3d-menu#readme",
   "dependencies": {
     "@tweenjs/tween.js": "^23.1.2",
     "classnames": "^2.5.1",
